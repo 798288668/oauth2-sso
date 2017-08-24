@@ -1,0 +1,15 @@
+logging:
+  file: logs/oath2-sso.log
+  level:
+    root: info
+    com.bdfint. sso: debug
+
+server:
+  port: 7777
+
+spring:
+  application:
+    name: oath2-sso
+  aop:
+    proxy-target-class: true
+
