@@ -1,0 +1,24 @@
+logging:
+  file: logs/oath2-sso.log
+  level:
+    root: info
+    org.springframework.security: DEBUG
+
+server:
+  port: 9992
+
+spring:
+  application:
+    name: resource-server
+  aop:
+    proxy-target-class: true
+  jackson:
+    date-format: com.fasterxml.jackson.databind.util.ISO8601DateFormat
+
+security:
+  oauth2:
+    resource:
+      token-info-uri: ${auth-server:http://localhost:9999/uaa}/oauth/check_token
+    client:
+      client-id: demo
+      client-secret: demo

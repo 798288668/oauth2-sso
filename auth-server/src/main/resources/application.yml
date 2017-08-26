@@ -1,0 +1,26 @@
+logging:
+  file: logs/oath2-sso.log
+  level:
+    root: info
+    org.springframework.security: DEBUG
+
+server:
+  port: 9991
+
+spring:
+  application:
+    name: auth-server
+  aop:
+    proxy-target-class: true
+
+security:
+  user:
+    password: password
+  oauth2:
+    client:
+      client-id: demo
+      client-secret: demo
+      scope: read, write
+      auto-approve-scopes: .*
+    authorization:
+      check-token-access: permitAll()
