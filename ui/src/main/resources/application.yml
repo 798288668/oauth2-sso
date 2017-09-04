@@ -2,21 +2,16 @@ logging:
   file: logs/oath2-sso.log
   level:
     root: info
-    com.bdfint. sso: debug
     org.springframework.security: DEBUG
 
 server:
   port: 9993
 
 spring:
-  application:
-    name: auth-server
-  aop:
-    proxy-target-class: true
   jackson:
       date-format: com.fasterxml.jackson.databind.util.ISO8601DateFormat
 
-auth-server: http://localhost:9999/uaa
+auth-server: http://localhost:9991/uaa
 
 security:
   basic:

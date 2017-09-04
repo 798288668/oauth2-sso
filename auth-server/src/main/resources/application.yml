@@ -6,12 +6,7 @@ logging:
 
 server:
   port: 9991
-
-spring:
-  application:
-    name: auth-server
-  aop:
-    proxy-target-class: true
+  context-path: /uaa
 
 security:
   user:

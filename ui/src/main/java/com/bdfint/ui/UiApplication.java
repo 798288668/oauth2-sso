@@ -39,7 +39,7 @@ public class UiApplication {
     static class HomeController {
         @Autowired
         OAuth2RestTemplate restTemplate;
-        @Value("${messages.url:http://localhost:7777}/api")
+        @Value("${messages.url:http://localhost:9992}/api")
         String messagesUrl;
 
         @RequestMapping("/")
