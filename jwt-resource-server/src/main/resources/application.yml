@@ -13,9 +13,5 @@ spring:
 security:
   oauth2:
     resource:
-      token-info-uri: ${auth-server:http://localhost:9991/uaa}/oauth/check_token
       jwt:
-        key-uri: ${auth-server:http://localhost:9999/uaa}/oauth/token_key
-    client:
-      client-id: demo
-      client-secret: demo
+        key-uri: ${auth-server:http://localhost:9991/uaa}/oauth/token_key

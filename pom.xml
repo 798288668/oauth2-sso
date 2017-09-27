@@ -12,6 +12,8 @@
         <module>auth-server</module>
         <module>resource-server</module>
         <module>ui</module>
+        <module>jwt-auth-server</module>
+        <module>jwt-resource-server</module>
     </modules>
 
     <repositories>
