@@ -1,4 +1,4 @@
-package com.bdfint.auth;
+package com.cheng.auth;
 
 import org.apache.catalina.filters.RequestDumperFilter;
 import org.springframework.boot.SpringApplication;
